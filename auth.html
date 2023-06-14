@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./auth.css">
+    <title>Connexion/Inscription</title>
+</head>
+<body>
+    <main>
+        
+        <header>
+            <h1>Connexion ou inscription</h1>
+        </header>
+
+        <hr class="solid">
+        <div class="authContent">
+            <h2>Bienvenue sur Airbnb</h2>
+
+            <form action=""> <!-- target du script d'authentification -->
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Numéro de téléphone">
+                <span id="disclaimer">Nous vous appellerons ou vous enverrons un SMS pour confirmer votre numéro. Les frais standards d'envoi de messages et d'échange de données s'appliquent. <a href="https://www.airbnb.fr/help/article/2855" target="_blank">Politique de confidentialité</a></span>
+                <button type="submit" id="submit">Continuer</button>
+            </form>
+        </div>
+        
+        <hr class="solid">
+
+        <div class="otherConnection">
+            <div class="connectionCard" id="facebook"><img class="logo" id="facebook-icon" src="./ressources/img/facebook-icon.png" alt="icon"><span class="text">Continuer avec Facebook</span></div>
+
+            <div class="connectionCard" id="google"><img class="logo" id="google-icon" src="./ressources/img/google-icon.png" alt="icon"><span class="text">Continuer avec Google</span></div>
+
+            <div class="connectionCard" id="apple"><img class="logo" id="apple-icon" src="./ressources/img/apple-icon.png" alt="icon"><span class="text">Continuer avec Apple</span></div>
+
+            <div class="connectionCard" id="email"><img class="logo" id="email-icon" src="./ressources/img/email-icon.png" alt="icon"><span class="text">Continuer avec une adresse e-mail</span></div>
+        </div>
+    </main>
+</body>
+</html>
